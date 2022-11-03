@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GiaoDien">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Ứng dụng quản lý Trường Học"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="47dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnNV"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/btnNV"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Quản Lý Nhân Viên"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="142dp"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintBottom_toTopOf="@id/btnTM"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <Button
+        android:id="@+id/btnTM"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Quản Lý Tổ Môn"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="245dp"
+        app:layout_constraintTop_toBottomOf="@id/btnNV"
+        app:layout_constraintBottom_toTopOf="@id/btnLH"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btnLH"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Quản Lý Lớp Học"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="353dp"
+        app:layout_constraintTop_toBottomOf="@id/btnTM"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
